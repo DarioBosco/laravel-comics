@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('comics');
+    $data = [
+        'comics' => $comics
+    ];
+    return view('home', $data);
 })->name('pagina-home');
 
 Route::get('/characters', function () {
@@ -22,7 +26,11 @@ Route::get('/characters', function () {
 })->name('pagina-personaggi');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('comics');
+    $data = [
+        'comics' => $comics
+    ];
+    return view('comics', $data);
 })->name('pagina-fumetti');
 
 Route::get('/movies', function () {

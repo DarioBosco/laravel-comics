@@ -41,13 +41,13 @@
 </header>
 
 <style>
-    ul {
+    header ul {
         list-style: none;
     }
-    li {
+    header ul li {
         display: inline-block;
     }
-    li a {
+    header ul li a {
         text-decoration: none;
         color: blue;
     }
