@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <img src="PATH_LOGO" alt="" />
+            <a href="{{ route('pagina-home')}}"> <img src="./img/dc-logo.png" alt="Logo DC" /> </a>
         </div>
         <nav>
             <ul>
